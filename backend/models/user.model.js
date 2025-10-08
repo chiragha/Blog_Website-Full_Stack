@@ -41,6 +41,9 @@ const userSchema = new mongoose.Schema({
     select: false,
     minlength: 5,
   },
+  token:{
+    type: String,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
